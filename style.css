@@ -1,0 +1,53 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Encabezado */
+    .encabezado {
+      background-color: #0033cc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* Título principal */
+    .titulo {
+      background-color: #0033cc;
+      color: white;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 20px;
+      border-top: 5px solid red;
+      border-bottom: 5px solid red;
+    }
+
+    /* Sección de video, marquesina y mapa */
+    .seccion-triple {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .columna {
+      flex: 1;
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      color: yellow;
+      font-weight: bold;
+    }
+
+    .columna.azul {
+      background-color: #0033cc;
+    }
+
+    .columna.roja {
+      background-color: #cc0000;
+      color: white;
+    }
+
+
