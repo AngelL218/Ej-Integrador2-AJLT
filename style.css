@@ -88,3 +88,33 @@
       border: 1px solid #0033cc;
     }
 
+    /* Catálogo de marcas */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .marca {
+      background-color: #cc0000;
+      color: yellow;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .marca img {
+      width: 100px;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    /* Pie de página */
+    footer {
+      border-top: 5px solid red;
+      text-align: center;
+      padding: 10px;
+      background-color: #eee;
+    }
+
