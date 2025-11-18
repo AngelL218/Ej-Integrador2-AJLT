@@ -59,3 +59,32 @@
       border-radius: 10px;
     }
 
+      .cotizacion h2 {
+      text-align: center;
+      color: #0033cc;
+    }
+
+    .cotizacion label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .cotizacion input[type="text"],
+    .cotizacion input[type="email"],
+    .cotizacion select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    .cotizacion .opciones {
+      margin-top: 10px;
+    }
+
+    .resultado {
+      background-color: #e6f7ff;
+      padding: 15px;
+      margin-top: 20px;
+      border: 1px solid #0033cc;
+    }
+
