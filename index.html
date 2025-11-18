@@ -81,6 +81,7 @@
 
     <div class="cotizacion">
     <h2>Cotización de vehículos</h2>
+
     <form id="formulario">
       <label>Nombre completo:</label>
       <input type="text" name="nombre" required>
@@ -93,29 +94,36 @@
       <input type="radio" name="financiamiento" value="Crédito"> Crédito
 
       <div class="opciones">
-        <label>Extras:</label>
-        <input type="checkbox" name="extras" value="Aire Acondicionado"> Aire Acondicionado
-        <input type="checkbox" name="extras" value="GPS"> GPS
-        <input type="checkbox" name="extras" value="Incluir Seguro"> Incluir Seguro
-        <input type="checkbox" name="extras" value="Quemacocos"> Quemacocos
-        <input type="checkbox" name="extras" value="Camara trasera"> Cámara trasera
-        <input type="checkbox" name="extras" value="Camara frontal"> Cámara frontal
+        <label>Extras (costo extra de 5000):</label>
+        <input type="checkbox" name="AireAcondicionado" value="AireAcondicionado"> Aire Acondicionado
+        <input type="checkbox" name="GPS" value="GPS"> GPS
+        <input type="checkbox" name="IncluirSeguro" value="IncluirSeguro"> Incluir Seguro
+        <input type="checkbox" name="Quemacocos" value="Quemacocos"> Quemacocos
+        <input type="checkbox" name="CamaraTrasera" value="CamaraTrasera"> Cámara trasera
+        <input type="checkbox" name="CamaraFrontal" value="CamaraFrontal"> Cámara frontal
       </div>
 
       <label>Marca del vehículo:</label>
-      <select name="marca" required>
-        <option>HONDA $274,999 MXN</option>
-        <option>NISSAN $251,900 MXN</option>
-        <option>TOYOTA $316,400 MXN</option>
-        <option>MAZDA $301,900 MXN</option>
-        <option>HYUNDAI $280,500 MXN</option>
-        <option>KIA $302,000 MXN</option>
-        <option>MITSUBISHI $294,400 MXN</option>
-        <option>SUZUKI $299,990 MXN</option>
+      <select name="marca" required id="marca">
+        <option value="1">HONDA $274,999 MXN</option>
+        <option value="2">NISSAN $251,900 MXN</option>
+        <option value="3">TOYOTA $316,400 MXN</option>
+        <option value="4">MAZDA $301,900 MXN</option>
+        <option value="5">HYUNDAI $280,500 MXN</option>
+        <option value="6">KIA $302,000 MXN</option>
+        <option value="7">MITSUBISHI $294,400 MXN</option>
+        <option value="8">SUZUKI $299,990 MXN</option>
       </select>
 
       <br><br>
-                <button type="button" onclick="calcular()">Solicitar cotizacion </button>
+
+        <label for="total">
+        <div class="total" id="total" name="total">
+        Total: $0.00</div>
+      </label>
+
+      <button type="button" class="submit-btn" onclick="calcular()" id="total">Calcular Total</button>
+
     </form>
 
     <div id="resultado" class="resultado" style="display:none;"></div>
@@ -125,7 +133,7 @@
     Angel Lara #45850
   </footer>
 
-   <script src="script.js"></script>
+   <script src="scrips.js"></script>
     
 </body>
 </html>
