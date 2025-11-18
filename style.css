@@ -50,4 +50,12 @@
       color: white;
     }
 
+    /* Formulario de cotización */
+    .cotizacion {
+      padding: 20px;
+      background-color: #fff;
+      margin: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
 

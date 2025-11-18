@@ -76,6 +76,52 @@
       <a href="https://www.suzuki.com.mx" target="_blank">Ver más</a>
     </div>
   </div>
+
+    <div class="cotizacion">
+    <h2>Cotización de vehículos</h2>
+    <form id="formulario">
+      <label>Nombre completo:</label>
+      <input type="text" name="nombre" required>
+
+      <label>Correo electrónico:</label>
+      <input type="email" name="correo" required>
+
+      <label>Tipo de financiamiento:</label>
+      <input type="radio" name="financiamiento" value="Contado" required> Contado
+      <input type="radio" name="financiamiento" value="Crédito"> Crédito
+
+      <div class="opciones">
+        <label>Extras:</label>
+        <input type="checkbox" name="extras" value="Aire Acondicionado"> Aire Acondicionado
+        <input type="checkbox" name="extras" value="GPS"> GPS
+        <input type="checkbox" name="extras" value="Incluir Seguro"> Incluir Seguro
+        <input type="checkbox" name="extras" value="Quemacocos"> Quemacocos
+        <input type="checkbox" name="extras" value="Camara trasera"> Cámara trasera
+        <input type="checkbox" name="extras" value="Camara frontal"> Cámara frontal
+      </div>
+
+      <label>Marca del vehículo:</label>
+      <select name="marca" required>
+        <option>HONDA</option>
+        <option>NISSAN</option>
+        <option>TOYOTA</option>
+        <option>MAZDA</option>
+        <option>HYUNDAI</option>
+        <option>KIA</option>
+        <option>MITSUBISHI</option>
+        <option>SUZUKI</option>
+      </select>
+
+      <br><br>
+      <button type="submit">Solicitar Cotización</button>
+    </form>
+
+    <div id="resultado" class="resultado" style="display:none;"></div>
+  </div>
+
+  <footer>
+    Angel Lara #45850
+  </footer>
     
 </body>
 </html>
